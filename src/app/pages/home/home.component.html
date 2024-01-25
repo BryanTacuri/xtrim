@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-9 blog-main">
+
+      <!-- Sección de saludo -->
+      <div class=" card-color shadow-sm p-3 mb-2 bg-white">
+        <app-seccion-saludo [date]="date" [hour]="hour" [username]="username"></app-seccion-saludo>
+      </div>
+
+      <!-- Sección de Mis cuentas -->
+      <div class="card shadow-sm p-4 mt-5 mb-2 bg-white">
+        <app-seccion-cuenta [account]="account" [city]="city" [money]="money"></app-seccion-cuenta>
+      </div>
+
+      <!-- Otras secciones -->
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4 mb-2">
+            <div class="d-flex flex-column p-4">
+              <!-- Sección 1: Detalles -->
+              <app-seccion-detalle [title]="'Revisa tu turno de instalación'"
+                [body]="'Consulta la fecha y hora de tu instalación.'"></app-seccion-detalle>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección Visita Tienda Xtrim -->
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4 mb-2">
+            <div class="d-flex flex-column p-4">
+              <!-- Sección 1: Detalles -->
+              <app-seccion-detalle [title]="'Visita Tienda Xtrim'"
+                [body]="'Revisa nuestro catálogo y obtén ofertas exclusivas.'"></app-seccion-detalle>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de imagen -->
+      <div class="row mt-5">
+        <div class="d-flex justify-content-between">
+          <img src="assets/images/footer.png" class="img-fluid rounded" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra lateral -->
+    <aside class="col-md-3 blog-sidebar">
+      <app-seccion-aside></app-seccion-aside>
+    </aside>
+  </div>
+</div>

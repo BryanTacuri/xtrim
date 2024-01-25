@@ -1,0 +1,49 @@
+<div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between">
+        <div class="d-flex flex-row align-items-center">
+            <div class="ms-2 c-details">
+                <h3 class="mb-0 heading">Mis cuentas</h3>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between">
+        <div class="text-end">
+            <p style="color: #903697 !important; font-weight: bold;">Todas mis cuentas</p>
+        </div>
+    </div>
+</div>
+
+<!-- Detalles de cuenta -->
+<div class="mt-5 col-md-6 ">
+    <div class="shadow p-3 mb-5 bg-white rounded p-4 mb-2"
+        style="border-top: 15px solid #9F62B0; padding-right: 20px !important;">
+        <div class="row">
+            <div class="col-6">
+                <p class="mb-0" style="font-weight: bold;">Cuenta No.</p>
+            </div>
+            <div class="col-6 text-end">
+                <p class="mb-0" style="font-weight: bold;">{{account}}</p>
+            </div>
+        </div>
+        <p class="mb-0" style="color: #777777 !important">{{city}}</p>
+        <div class="row mt-5">
+            <div class="col-6">
+                <p class="mb-0" style="font-size: 20px; color: #d4b0f1 !important; font-weight: bold;"> $ {{ money |
+                    number:'1.2-2' }} </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p style="font-size: 12px" class="mb-0">Saldo Pendiente</p>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" class="text1" style="text-decoration: none;">
+                    Gestionar <i class="text-icon bi bi-chevron-right"></i>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

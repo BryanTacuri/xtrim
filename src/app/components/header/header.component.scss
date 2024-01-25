@@ -1,0 +1,21 @@
+header {
+//linear gradient
+background: linear-gradient(90deg, #FEFDFF 0%, #BD93CB 100%);
+
+ 
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+.icon-style{
+    font-size: 3rem !important;
+    color: #6d1d78 !important;
+}

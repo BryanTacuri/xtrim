@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-between">
+    <div class="d-flex flex-row align-items-center">
+        <img src="assets/images/avatar.png" class="img-fluid rounded" width="100px" height="40" alt="...">
+        <div class="ms-2 c-details">
+            <h1 class="mb-0" style="color: #903697 !important;">¡Hola {{ username }}!</h1>
+        </div>
+    </div>
+    <div class="text-end">
+        <p style="color: #777777 !important">{{ date | date:'EEEE, d ' | capitalize }}{{ date | date:'MMMM y' |
+            capitalize }}</p>
+        <p style="color: #777777 !important"> {{ hour | date:'shortTime' }}</p>
+    </div>
+</div>
